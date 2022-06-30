@@ -1,0 +1,668 @@
+.clear{
+    clear: both;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+header{
+    width: 100%;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+header a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.top-bar{
+    width: 100%;
+    height: 30px;
+    background: #555;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-bar p{
+    display: block;
+    float: left;
+    font-size: 12px;
+    line-height: 30px;
+}
+
+.top-bar p:first-of-type{
+    margin-left: 10%;
+}
+
+.top-bar p:last-of-type{
+    margin-right: 10%;
+}
+
+.top-bar i{
+    text-shadow: 0 2px 3px #222;
+}
+
+.top-bar em{
+    font-style: italic;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.top-bar a{
+    color: #efefef;
+}
+
+.center{
+    clear: both;
+}
+
+.logo, .outils{
+    height: 100px;
+    margin: 20px 10%;
+}
+
+.logo{
+    float: left;
+    cursor: pointer;
+    color: #333;
+}
+
+.logo p{
+    text-align: center;
+}
+
+.logo p em{
+    font-style: italic;
+    font-size: 14px;
+}
+
+.outils{
+    float: right;
+}
+
+.outils a{
+    color: #333;
+}
+
+.outils .iconG{
+    float: left;
+}
+
+.outils .iconD{
+    float: right;
+    margin-left: 50px;
+}
+
+.panier{
+    width: 45px;
+}
+
+.outils .iconG div{
+    float: right;
+    margin: 5px;
+}
+
+.outils .titre a{
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.outils .desc a{
+    font-size: 13px;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.outils hr{
+    clear: both;
+    border: none;
+    border-bottom: 1px solid #eee;
+}
+
+nav{
+    clear: both;
+    width: 86%;
+}
+
+nav ul{
+    background: linear-gradient(to bottom, #fafafa, #ececec);
+    box-shadow: 0 -1px 2px #ddd;
+    height: 32px;
+    padding: 0 10%;
+    width: 100%;
+    margin: auto;
+}
+
+nav ul li{
+    float: left;
+    width: calc(calc(100% - 1px) / 11); 
+    /* La fonction calc() peut être utilisée à n'importe quel endroit ou une <lenght> <angle>... */
+    /* exemple => J'ai une mise en page à 11 colonnes qui devrait remplir tout l'écran, donc sur mes colonnes, 
+    j'utilise: width: calc(100% / 11)
+    /* Disons par exemple que mon écran mesure 1024px de large, 1024 / 11 = 93 */
+    text-align: center;
+    font-size: 12px;
+    line-height: 32px;
+    padding: 0px 0;
+    border-left: 1px solid #ddd;
+}
+
+nav ul li form{
+    width: 100%;
+    float: right;
+}
+
+nav ul li:last-of-type{
+    width: 17%;
+}
+
+nav form input{
+    float: left;
+}
+
+nav ul li:first-of-type{
+    border: 0;
+}
+
+nav li i{
+    padding: 3px 0;
+}
+
+nav form{
+    text-align: left;
+    padding: 3px 0;
+}
+
+nav form input, nav form button{
+    display: block;
+    float: left;
+}
+
+nav form input{
+    padding: 3px 10px;
+    border: none;
+    border-top: 2px solid #ccc;
+    border-left: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    border-radius: 1px 0 0 1px;
+    font-style: italic;
+    color: #888;
+}
+
+nav form button{
+    height: 26px;
+    border-radius: 0 2px 2px 0;
+    border: none;
+    background: linear-gradient(#909090, #757575);
+}
+
+nav form button i{
+color: #fff;
+
+}
+nav ul li{
+    color: #2A2A2A;
+}
+.principal{
+    clear: both;
+    margin-bottom: 50px;
+}
+.c-container{
+    width: 80%;
+    padding: 20px 0;
+    margin: auto;
+}
+.carousel{
+    width: calc(75% - 30px);
+    height: 590px;
+    background: #000;
+    float: left;
+}
+.ism-slider{
+    height: 100% !important;
+}
+.ism-slider img{
+    height: 100% !important;
+}
+.ism-slider .ism-caption{
+    bottom: 0% !important;
+    height: auto !important;
+    padding: 10px 0;
+    width: 100%;
+    text-align: left;
+    padding-left: 2%;
+}
+.c-prod{
+    width: 52%;
+    margin: 0 0 30px;
+    height: 280px;
+    background: #444;
+    float: right;
+    position: relative;
+}
+
+
+.c-prod .st{
+    background-image: url(../img/carrelage3.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.c-prod .nd{
+    background-image: url(../img/carrelage13.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.c-prod span{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background: #F62775;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+}
+.d-i-container{
+    clear: both;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 80%;
+}
+.doubleContainer.doubleLine span{
+    line-height: 25px;
+    float: right;
+    width: calc(100% / 60px);
+    display: block;
+}
+.i-container{
+    position: relative;
+    width: 300px;
+    margin: 1rem 5rem 1rem 0;
+}
+.i-container img{
+    float: left;
+}
+.i-container span{
+    height: 50px;
+    line-height: 50px;
+    color: #555;
+    font-size: 14px;
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+
+.i-container .Last{
+    transform: translate(0, 20px);
+}
+
+hr{
+    clear: both;
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    margin-top: -5px;
+    z-index: -1;
+}
+
+
+.np{
+    width: 80%;
+    margin: auto;
+    /* background: maroon; */
+}
+
+.np-titre{
+    background: #f62775;
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    position: relative;
+}
+
+.np-titre .triangle{
+    border-left: 0px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 55px solid #f62775;
+    position: absolute;
+    top: 0;
+    right: -25px;
+}
+
+.card{
+    width: 320px;
+    background: #fff;
+    border: 1px solid #ddd;
+    color: #444;
+    float: left;
+    margin: 30px 0;
+}
+.card:hover button{
+    cursor: pointer;
+}
+.card-st, .card.nd{
+    margin-right: 15%;
+}
+.card-img{
+    background: #000;
+    height: 30%;
+    position: relative;
+}
+.card i.fa.fa-search{
+    color: #f62775;
+}
+.card i.fas.fa.file-invoice{
+    color: #333;
+
+}
+
+.card st .card-img.st{
+    background: url(../img/carrelage12.jpg);
+
+}
+
+
+.card st .card-img.st{
+    background: url(../img/carrelage2.jpg);
+}
+
+
+.card st .card-img.st{
+    background: url(../img/carrelage11.jpg);
+}
+
+.card st .card-img.st{
+    background: url(../img/carrelage9.jpg);
+}
+
+
+
+
+.card st .card-img.st{
+    background: url(../img/carrelage10.jpg);
+
+}
+
+
+
+.card st .card-img.st{
+    background: url(../img/carrelage1.jpg);
+}
+
+
+/*---------------Images produits-----------------*/
+
+.promo{
+    background: url(../img/promo.png);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.promo2{
+    background: url(../img/livraison.png);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.promo3{
+    background: url(../img/nouveauté.png);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.card-title{
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.card-body{
+    position: relative;
+    height: 40%;
+    font-size: 14px;
+    font-weight: bold;
+}
+.card-price{
+    width: 100px;
+    text-align: center;
+    padding-bottom: 30px;
+    color: #f62775;
+}
+.card-link-left, .card-link-right{
+    display: block;
+    float: left;
+    background: #000;
+    width: 50%;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+}
+.card-link-left{
+    background: #2a2a2a;
+}
+.card-link-right{
+    background: #f62775;
+}
+.card-link-large{
+    clear: both;
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    background: rgb(184, 184, 184);
+    padding: 5px 0;
+}
+.options{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+}
+.espace{
+    padding: 10px;
+    clear: both;
+}
+
+
+/*********************************E-SHOP******************************/
+
+
+.e-shop{
+    clear: both;
+    width:80%;
+    margin:auto;
+    background: #616161;
+    color: #efefef;
+    position:relative;
+    margin-bottom: 50px;
+
+}
+
+.e-title, .e-li-title{
+    font-weight:bold;
+    color: #fff;
+
+}
+
+.e-title{
+
+    background: #f62775;
+    display: inline-block;
+    padding: 10px 50px;
+    font
+    color: #fff;
+    position: absolute;
+    top: -17px
+    left: 0;
+}
+
+
+
+.e-title{
+    background: #f62775;
+    display: inline-block;
+    padding: 10px 50px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    top: -17px;
+    left: 0;
+}
+
+.e-triangle {
+    border-top: 17px solid transparent;
+    border-left: 17px solid transparent;
+    border-right: 17px solid transparent;
+    border-bottom: 17px solid #f62775;
+    position: absolute;
+    top: 0;
+    right: -34px;
+    transform: rotate(90deg);
+}
+
+.e-shop ul{
+    float: left;
+    width: calc(calc(100% / 3) -1px);
+    border-right: 1px solid #757575;
+    height: 385px;
+}
+
+.e-shop :first-of-type div{
+    /* background: red; */
+    margin-bottom: 50px;
+}
+
+.e-shop ul:nth-of-type(2) div, .e-shop ul:nth-of-type(3) div{
+    margin-bottom: 200px;
+}
+
+.e-shop ul li{
+    margin: 10px 30px;
+    line-height: 125%;
+}
+
+.e-shop ul li:first-of-type{
+    margin-top: 50px;
+}
+
+.e-li-title{
+    padding: 12px 0 10px;
+}
+
+.e-desc{
+    margin-bottom: 10px;
+}
+
+.e-desc-inter {
+    margin-bottom: 10px;
+    display: block;
+}
+.adress{
+    background:url(../img/sprites.png) , no-repeat;
+background-position-y:-101px ;
+
+}
+
+.tel{
+    background: url(../img/sprites.png);
+}
+
+
+.mail{
+    background: url(../img/sprites.png);
+    background-position-y: 2px;
+
+}
+
+
+.horaires{
+
+    background:url(../img/sprites.png);
+    background-position-y:-33px ;
+
+}
+
+
+
+/* ********************************** Footer ********************************* */
+
+footer{
+    clear: both;
+    background: #f5f5f5;
+    width: 100%;
+    color: #555;
+}
+
+footer ul{
+    float: left;
+    width: calc(calc(100% / 4) - 30px);
+    margin: 0 15px;
+}
+
+footer ul h5{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    margin: 10px 0;
+}
+
+footer ul:last-of-type{
+    width: calc(75% - 20px);
+    float: left;
+    margin: 0 10px;
+}
+
+
+footer ul:last-of-type h5{
+    text-align: left;
+    text-transform: capitalize;
+}
+
+footer ul:last-of-type p{
+    text-transform: capitalize;
+    line-height: 25px;
+    font-size: 14px;
+}
+
+footer ul li{
+    margin-bottom: 5px;
+}
+
+footer ul:nth-of-type(2) li{
+    transform: translate(25%);
+}
+
+footer ul:nth-of-type(3) li {
+    text-align: center;
+}
+
+footer ul:nth-of-type(4) {
+    float: right;
+}
+
+footer ul:nth-of-type(4) li{
+    margin-bottom: 20px;
+}
+
+footer a{
+    color: #555;
+}
+
+.f-ul-container{
+    width: 80%;
+    padding: 30px 50px;
+    margin: auto;
+}
+
+.f-map{
+    
+}
